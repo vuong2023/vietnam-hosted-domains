@@ -1,9 +1,9 @@
 custom_domains = {
     "proxy": [
-        " ",
+        "",
     ],
     "direct": [
-        " ",
+        "",
     ],
     "remove": [
         "googleapis.com",
