@@ -55,7 +55,7 @@ IP_REGEX = re.compile(
     r"^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])$"
 )
 
-IR_DOMAIN_REGEX = re.compile(r"\.ir$", re.IGNORECASE)
+IR_DOMAIN_REGEX = re.compile(r"\.vn$", re.IGNORECASE)
 
 PERSIAN_CHARS_REGEX = re.compile(
     r"[\u0622\u0627\u0628\u067E\u062A-\u062C\u0686\u062D-\u0632"
