@@ -4,7 +4,7 @@ url="https://github.com/vuong2023/vietnam-hosted-domains/releases/latest/downloa
 current_file="$1"
 
 if [ -z "$current_file" ]; then
-    echo "Usage: $0 </path/to/iran.dat>"
+    echo "Usage: $0 </path/to/vn.dat>"
     exit 1
 fi
 
