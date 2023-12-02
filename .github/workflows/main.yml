@@ -69,13 +69,13 @@ jobs:
 
       - name: Build sing-box .db file
         run: |
-          git clone https://github.com/bootmortis/sing-geosite
+          git clone https://github.com/vuong2023/sing-geosite
           
-          cp output/iran.dat sing-geosite/data/iran.dat
+          cp output/vn.dat sing-geosite/data/vn.dat
 
           cd sing-geosite
           go run -v .
-          mv iran-geosite.db ../output/iran-geosite.db
+          mv iran-geosite.db ../output/vn-geosite.db
 
       - name: Calculate checksum
         run: |
