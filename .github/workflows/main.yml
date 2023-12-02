@@ -56,9 +56,9 @@ jobs:
           rm -rf domain-list-community/data/*
 
           python3 src/data/custom_domains.py | jq -r '.proxy | join("\n")' > domain-list-community/data/proxy
-          mv output/ir_domains.txt domain-list-community/data/ir
+          mv output/vn_domains.txt domain-list-community/data/vn
           mv output/other_domains.txt domain-list-community/data/other
-          cp src/data/tld_ir.txt domain-list-community/data/tld-vn
+          cp src/data/tld_vn.txt domain-list-community/data/tld-vn
           cp src/data/all.txt domain-list-community/data/all
           mv output/ads.txt domain-list-community/data/ads
           
