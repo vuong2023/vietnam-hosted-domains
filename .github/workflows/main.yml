@@ -65,7 +65,7 @@ jobs:
           cd domain-list-community
           go run ./ --outputdir=../output
           cd ../output
-          mv dlc.dat iran.dat
+          mv dlc.dat vn.dat
 
       - name: Build sing-box .db file
         run: |
@@ -75,7 +75,7 @@ jobs:
 
           cd sing-geosite
           go run -v .
-          mv iran-geosite.db ../output/vn-geosite.db
+          mv vn-geosite.db ../output/vn-geosite.db
 
       - name: Calculate checksum
         run: |
