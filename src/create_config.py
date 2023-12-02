@@ -41,15 +41,15 @@ def shadowrocket(bypass_domains: Iterable[str], ads_domains: Iterable[str]):
 
 def qv2ray(bypass_domains: Iterable[str], proxied_domains: Iterable[str], ads_domains: Iterable[str]):
     schema = {
-        "description": "Iran hosted domains",
+        "description": "Vietnam hosted domains",
         "domainStrategy": "AsIs",
         "domains": {
-            "direct": ["regexp:^.+\\.ir$"] + list(bypass_domains),
+            "direct": ["regexp:^.+\\.vn$"] + list(bypass_domains),
             "proxy": list(proxied_domains),
             "block": ["geosite:category-ads-all"] + list(ads_domains),
         },
-        "ips": {"direct": ["geoip:ir"]},
-        "name": "ir_hosted",
+        "ips": {"direct": ["geoip:vn"]},
+        "name": "vn_hosted",
     }
 
     utils.save_to_file(consts.qv2ray_schema_path, json.dumps(schema))
