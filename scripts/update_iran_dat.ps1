@@ -1,7 +1,7 @@
 ﻿Param(
     $current_file
 )
-$url = "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat"
+$url = "https://github.com/vuong2023/vietnam-hosted-domains/releases/latest/download/vn.dat"
 
 if ($current_file -eq "") {
     "Usage: update_iran.dat.ps1 </path/to/iran.dat>"
