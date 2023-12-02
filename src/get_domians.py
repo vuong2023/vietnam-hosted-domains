@@ -52,7 +52,7 @@ def ads() -> Iterable[str]:
     ads = filter(utils.letter_digit_hyphen, ads)
     return sorted(ads)
 
-def v2fly(filename = "category-ir") -> Iterable[str]:
+def v2fly(filename = "category-vn") -> Iterable[str]:
     resp = requests.get(consts.v2fly_base_url + filename)
     resp.raise_for_status()
 
