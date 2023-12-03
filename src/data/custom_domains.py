@@ -1,9 +1,9 @@
 custom_domains = {
     "proxy": [
-        "",
+        "youtube.com",
     ],
     "direct": [
-        "",
+        "viettellelecom.vn",
     ],
     "remove": [
         "googleapis.com",
